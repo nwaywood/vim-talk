@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>speaking-vim</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+        }
+
+        h1, h2, h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+
+        .hero-text {
+            font-size: 3em;
+            height: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex {
+			display: flex;
+			justify-content: space-around;
+		}
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-item {
+            flex: 0 1 auto;
+        }
+
+        .flex-1 {
+			flex: 1 1 50%;
+		}
+
+    	.spacer {
+			width: 4em;
+			height: 4em;
+			flex-shrink: 0;
+		}
+
+		.footnote {
+			position: absolute;
+			bottom: 3em;
+		}
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .remark-inline-code {
+            background-color: #F7F7F9;
+            color: #CC2255;
+            border: 1px solid #E1E1E8;
+            border-radius: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        #slide-core-idea .flex-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #slide-core-idea .big p {
+            font-size: 2.0em;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/remark.min.js"></script>
+
+    <script>
+        var slideshow = remark.create({
+            ratio: '16:9',
+            sourceUrl: 'slides.md',
+            slideNumberFormat: '%current%',
+            countIncrementalSlides: false,
+            highlightStyle: 'solarized_dark',
+        });
+</script>
+</body>
+
+</html>
