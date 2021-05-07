@@ -21,14 +21,13 @@ class: middle, center
 
 - Plugins
 
-- How I use Vim 🎁
+- Other options
 
 - Conclusion
-
-- Resources
 ]
 .flex-1[
-<img src="images/Vimlogo.svg" width="450"/>
+<img src="images/Vimlogo.svg" width="250"/>
+<img src="images/Neovim-logo.png" width="450"/>
 ]
 ]
 
@@ -141,7 +140,7 @@ A motion is a movement from the current cursor position (start) to a defined tar
 
 - `b` - the previous word
 
-- `{`, `}` - start/end of a paragraph (code block)
+- `{`, `}` - start/end of a paragraph (~code block)
 
 - `tx`, `Tx` - find character 'til x forwards/backwards
 
@@ -156,8 +155,8 @@ A motion is a movement from the current cursor position (start) to a defined tar
 ---
 ## Motions
 
-.hero-text[
-<img src="images/vim-move-shortcuts.png" width="750px" />
+.flex-center[
+<img src="images/vim-move-shortcuts.png" width="800px" />
 ]
 
 ---
@@ -291,7 +290,6 @@ Some third party Operators and Text Objects that I use all the time
 
 - `ds` - delete surrounding
 
-- `co` - change occurence <su>* </su>
 ]
 
 .flex-1[
@@ -304,10 +302,6 @@ Some third party Operators and Text Objects that I use all the time
 
 - `ic`, `ac` - comment
 ]
-]
-
-.footnote[
-<su>* Not currently available as operator in vanilla Vim</su>
 ]
 
 ---
@@ -328,7 +322,6 @@ Some third party Operators and Text Objects that I use all the time
 - `ys` -  add sur
 - `cs` - change sur
 - `ds` - delete sur
-- `co` - change occ
 ]
 
 .flex-1[
@@ -358,7 +351,7 @@ Some third party Operators and Text Objects that I use all the time
 ]
 ]
 
-9 Operators x (18 motions + 2 x 10 Text Objects) = <b>342 commands<su>* </su></b>
+8 Operators x (18 motions + 2 x 10 Text Objects) = <b>304 commands<su>* </su></b>
 
 ---
 ## Visual Mode - The Escape Hatch
@@ -467,71 +460,29 @@ class: middle, center
 
 - `nerdtree` - file drawer
 
-- `ctrlp` - fuzzy file finder
+- `fzf` - fuzzy file finder
 
 - `fugitive` - git tool
 
-- `tagbar` - file symbol overview
-
----
-class: middle, center
-## How I Use Vim
-
----
-## I Use Atom
-
-.hero-text[
-<img src="images/atom-logo.png" width="400"/>
-]
-
----
-class: center, middle
-
-<img src="images/woah.jpeg" width="400"/>
-
----
-## Atom
-
-- Atom has a FANTASTIC Vim plugin called `vim-mode-plus`
-
-    - Supports the vast majority of Vim
-
-    - Lots of common third party Operators and Text Objects included by default
-
-    - `co` and `go` operators
-
-    - Easier to customise if you are not a VimScript expert (add keymaps etc)
-
-    - Get the benefits of Vim as well as the benefits of a GUI editor
-
-    - Mature, being actively developed
-
-.flex-center[
-<img src="images/vim-mode-plus.png" width="500"/>
-]
+- `coc` - LSP support
 
 ---
 ## Other options
 
-- If you don't want to use Vim or Atom, most editors have a Vim plugin (with varying quality!)
+- If you don't want to use Vim, most editors have a Vim emulation plugin (with varying quality)
 
 --
 
-    - VSCode (Vim by vscodevim)- Good Vim emulation (a little immature but being actively developed)
+    - VSCode (Vim by vscodevim) - Good Vim emulation, very active
 
 --
-    - Jetbrains IDEs (IdeaVim) - Personally never used but heard its very good (mature, not very active)
+    - Jetbrains IDEs (IdeaVim) - Personally never used but heard its very good
 
 --
-    - Emacs (evil mode) - Good Vim emulation (mature, somewhat active)
+    - Atom (vim-mode-plus) - Fantastic plugin, in some ways even better than Vim imo
 
 --
-    - Sublime (<b>[D]</b> Vintage, <b>[D]</b> Vintageous, <b>[$]</b> Six) - Half finished, no longer being developed (RIP Sublime)
-
-.footnote[
-- <b>[D]</b> = Deprecated project, <b>[$]</b> = Plugin cost $
-- PSA: Stop using Sublime, Atom and VSCode are both better, newer, open source alternatives that are being actively developed by reputable companies (GitHub and Microsoft)
-]
+    - Emacs (evil mode) - Or Vim Emacs distrobutions (e.g. spacemacs, doom emacs)
 
 --
 - Chrome (Vimium) - Chrome isn't a text editor, but once you fall in love with Vim binding, you'll want them everywhere!
@@ -559,6 +510,17 @@ class: center, middle
 - You don't need to switch to Vim to take advantage of Vim's language, other editors have Vim emulation
 
 ---
+## Things I have Vim-ified
+
+- All my editors
+
+- Chrome/Firefox
+
+- tmux
+
+- zsh
+
+---
 ## Resources
 
 - vim + tmux - OMG (first 40 min) - https://www.youtube.com/watch?v=5r6yzFEXajQ
@@ -584,59 +546,4 @@ class: center, middle
 class: middle, center
 ## Thankyou - Questions?
 
----
-## Why I moved to Atom from Vim
 
-.flex[
-.flex-1[
-#### What I like
-
-- Realtime linting <su>* </su>
-
-- Breakpoint debugging
-
-- Easier customisation
-
-- Easier theming
-
-- Hackable with web technologies <su>* </su>
-
-- 'Occurence' Operator and preset-target
-
-- <b>Nice</b> git gutter info
-]
-.flex-1[
-#### What I miss
-
-- Macros
-
-- Misc little things
-
-    - Consistent window nav<su>* </su>
-
-    - Terminal is Vim buffer
-]
-]
-
-.footnote[
-<su>* </su>Not possible in the other editor
-]
-
----
-## Things I have Vim-ified
-
-- Vim
-
-- Atom
-
-- Chrome
-
-- tmux
-
-- zsh (or bash)
-
---
-
-- Quiver
-
-- OSX App Switcher (Contexts)
