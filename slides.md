@@ -21,7 +21,7 @@ class: middle, center
 
 - Plugins
 
-- Other options
+- Alternatives
 
 - Conclusion
 ]
@@ -134,7 +134,7 @@ class: middle, center
 <su>* </su>Motions can take numbers as modifiers
 ]
 
-A motion is a movement from the current cursor position (start) to a defined target (end)<su>* </su>
+A motion is a movement from the <b>current cursor position (start)</b> to a <b>defined target (end)<su>*</b> </su>
 
 - `w`, `e` - start/end of the next word
 
@@ -162,7 +162,7 @@ A motion is a movement from the current cursor position (start) to a defined tar
 ---
 ## Text Objects
 
-A text object defines a target <b>range</b> (start and end position). `i` and `a` are modifiers that slightly modify
+A text object defines a target <b>range (start and end position)</b>. `i` and `a` are modifiers that slightly modify
 the text object range
 
 .flex-center[
@@ -213,6 +213,8 @@ Examples:
 - `diw` - delete in word
 
 - `ciw` - change in word
+
+- `cip` - change in paragraph (~code block)
 
 - `yi"` - yank in quotes
 
@@ -296,9 +298,9 @@ Some third party Operators and Text Objects that I use all the time
 ### Text Objects
 - `ie`, `ae` - entire buffer
 
-- `if`, `af` - function
-
 - `il`, `al` - line
+
+- `if`, `af` - function
 
 - `ic`, `ac` - comment
 ]
@@ -408,7 +410,7 @@ class: middle, center
 ---
 ## Dot Command and Macros
 
-- The dot command (`.`) lets you repeat your last executed command
+- The dot command (`.`) lets you repeat your last executed command ("sentence")
 
     - "Do the last thing that I said to you again"
 
@@ -416,7 +418,7 @@ class: middle, center
 
 --
 
-- Macros can store an arbitary number of commands to be run in sequence
+- Macros can store an arbitary number of commands to be run in sequence ("paragraph")
 
     - Start recording macro: `q{register}`
 
@@ -432,8 +434,6 @@ class: middle, center
 .hero-text[
 `$diw^Pli, <esc>`
 ]
-
---
 
 - The delete operator both deletes the target text AND yanks it to buffer (just like 'cut' in other software)
 
@@ -467,7 +467,7 @@ class: middle, center
 - `coc` - LSP support
 
 ---
-## Other options
+## Alternatives
 
 - If you don't want to use Vim, most editors have a Vim emulation plugin (with varying quality)
 
@@ -529,16 +529,12 @@ class: middle, center
 
 - The stages of learning Vim - http://whileimautomaton.net/2008/11/vimm3/operator
 
---
-
 - Motions - http://inside.github.io/vim-presentation/images/vim-move-shortcuts.png
 
 - Cheat sheet
     - Old version - http://www.viemu.com/vi-vim-cheat-sheet.gif
 
     - New version - http://michael.peopleofhonoronly.com/vim/
-
---
 
 - My dotfiles - https://github.com/nwaywood/dotfiles
 
