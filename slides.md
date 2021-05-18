@@ -388,6 +388,8 @@ See "The stages of learning Vim" resource for more information
 
 - `<esc>` - enter normal mode
 
+- `u` - Undo last command ("sentence")
+
 - `p`/`P` - paste the contents of default register (clipboard) before/after cursor
 
 - `dd`/`yy` - delete/yank the current line
@@ -465,6 +467,8 @@ class: middle, center
 - `fugitive` - git tool
 
 - `coc` - LSP support
+
+- `which-key` - Keybindings GUI
 
 ---
 ## Alternatives
